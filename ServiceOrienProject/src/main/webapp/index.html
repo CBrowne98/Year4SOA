@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery.js"></script><!-- comment -->
+        <script src="script.js"></script>
+        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script><!-- comment -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script><!-- comment -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    </head>
+    <body>
+        
+         <table class="table table-striped bg-light text-center" id="table_id">
+                  <thead>
+                    <tr>
+                            <th>ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Car</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th>Timestamp</th>
+                    </tr>
+                    <tbody id="table_body">
+
+                    </tbody>
+                   </thead>
+                </table>
+        <input id="clickMe3" type="button" value="Refresh" onclick="refreshPeople();" />
+        <p>Status:</P>
+        <p id="Status"></p>
+        <p>Last Updated:</p>
+        <p id="Time"></p><br>
+        
+        <label for="fname">ID:</label><br>
+        <input type="text" id="id" name="id"><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="lname">Car:</label><br>
+        <input type="text" id="car" name="car"><br>
+        <label for="lname">City:</label><br>
+        <input type="text" id="city" name="city"><br>
+        <label for="lname">Country:</label><br>
+        <input type="text" id="country" name="country"><br>
+        <input id="clickMe" type="button" value="Add Person" onclick="addPerson();" />
+        <input id="clickMe2" type="button" value="Update Person" onclick="updatePerson();" /><br>
+        <p>Status:</p>
+        <p id="Status2"></p>
+        
+        
+    </body>
+</html>
